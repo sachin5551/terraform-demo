@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1"
+  region  = "ap-south-1"
   profile = "terraform"
 }
 
@@ -25,4 +25,7 @@ module "ec2" {
   vpc_id    = module.vpc.vpc_id
   subnet_id = module.vpc.subnet_id
   ami       = data.aws_ami.amazon_linux.id
+
+  servers = var.servers
 }
+
