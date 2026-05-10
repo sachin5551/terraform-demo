@@ -1,3 +1,7 @@
 .terraform/
 *.tfstate
+<<<<<<< HEAD
 *.tfstate.*
+=======
+*.tfstate.backup
+>>>>>>> 2842ef6ea981597582e8e62893c32d67119cac4c
