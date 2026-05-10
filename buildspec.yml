@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Terraform
+      - terraform --version
+
+  build:
+    commands:
+      - echo Terraform Init
+      - terraform init
+
+      - echo Terraform Validate
+      - terraform validate
+
+      - echo Terraform Plan
+      - terraform plan
+
+      - echo Terraform Apply
+      - terraform apply -auto-approve
